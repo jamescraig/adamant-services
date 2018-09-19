@@ -7,7 +7,6 @@
 /* global tw */
 
 import React from 'react'
-import PageTransition from 'gatsby-plugin-page-transitions'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
 import logoSrc from '../media/adamant-logo.svg'
@@ -50,27 +49,25 @@ const StyledLink = styled(Link)`
 `
 
 export default () => (
-	<PageTransition>
-		<Page>
-			<Navbar>
-				<Logo src={logoSrc} alt="Adamant Labs Logo" />
-				<NavbarTitle>Adamant Labs</NavbarTitle>
-			</Navbar>
-			<Container>
-				<Wrapper>
-					<TextContainer>
-						<Tagline>What does your brand need?</Tagline>
-						<StyledLink to="/web/">Web</StyledLink>
-						<StyledLink to="/media/">Media</StyledLink>
-						<StyledLink to="/systems/">Systems</StyledLink>
-					</TextContainer>
-					<TextContainer>
-						<Tagline>Who we are</Tagline>
-						<StyledLink to="/about/">About</StyledLink>
-						<StyledLink to="/connect/">Connnect</StyledLink>
-					</TextContainer>
-				</Wrapper>
-			</Container>
-		</Page>
-	</PageTransition>
+	<Page>
+		<Navbar>
+			<Logo src={logoSrc} alt="Adamant Labs Logo" />
+			<NavbarTitle>Adamant Labs</NavbarTitle>
+		</Navbar>
+		<Container>
+			<Wrapper>
+				<TextContainer>
+					<Tagline>What does your brand need?</Tagline>
+					<StyledLink to="/web/">Web</StyledLink>
+					<StyledLink to="/media/">Media</StyledLink>
+					<StyledLink to="/systems/">Systems</StyledLink>
+				</TextContainer>
+				<TextContainer>
+					<Tagline>Who we are</Tagline>
+					<StyledLink to="/about/">About</StyledLink>
+					<StyledLink to="/connect/">Connnect</StyledLink>
+				</TextContainer>
+			</Wrapper>
+		</Container>
+	</Page>
 )

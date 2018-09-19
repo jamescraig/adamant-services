@@ -10,7 +10,6 @@
     "gatsby": "next",
     "gatsby-link": "next",
     "gatsby-plugin-emotion": "next",
-    "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-react-helmet": "next",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
