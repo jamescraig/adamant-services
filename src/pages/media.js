@@ -57,15 +57,29 @@ export default () => (
 		<Container>
 			<Wrapper>
 				<TextContainer>
-					<Tagline>What does your brand need?</Tagline>
-					<StyledLink to="/web/">Web</StyledLink>
-					<StyledLink to="/media/">Media</StyledLink>
-					<StyledLink to="/systems/">Systems</StyledLink>
-				</TextContainer>
-				<TextContainer>
-					<Tagline>Who we are</Tagline>
-					<StyledLink to="/about/">About</StyledLink>
-					<StyledLink to="/connect/">Connnect</StyledLink>
+					<Tagline>
+						Media
+					</Tagline>
+					<h3>
+						Playing with Photons
+					</h3>
+					<p>
+					We find new ways to capture and release photons to tell a story. We use video, photo, virtual and augmented reality to engage with your customer.
+					</p>
+					<h3>
+						Technically Excellent, Emotionally Relevant
+					</h3>
+					<p>
+						The media we create is founded on a concrete understanding of your brand's values and your customers needs. We start every project by exploring and developing these ideas.
+					</p>
+					<h3>
+						Collaborative Creation
+					</h3>
+					<p>
+						Our customers are creators too, so we've deployed simple and easy tools to help integrate their feedback into the review process.
+					</p>
+					<StyledLink to="/connect">Connect</StyledLink>
+					<StyledLink to="/">Back Home</StyledLink>
 				</TextContainer>
 			</Wrapper>
 		</Container>

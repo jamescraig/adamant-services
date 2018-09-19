@@ -57,15 +57,29 @@ export default () => (
 		<Container>
 			<Wrapper>
 				<TextContainer>
-					<Tagline>What does your brand need?</Tagline>
-					<StyledLink to="/web/">Web</StyledLink>
-					<StyledLink to="/media/">Media</StyledLink>
-					<StyledLink to="/systems/">Systems</StyledLink>
-				</TextContainer>
-				<TextContainer>
-					<Tagline>Who we are</Tagline>
-					<StyledLink to="/about/">About</StyledLink>
-					<StyledLink to="/connect/">Connnect</StyledLink>
+					<Tagline>
+						Systems
+					</Tagline>
+					<h3>
+						Systems make it easy to be good at sales
+					</h3>
+					<p>
+						We find new ways to capture and release photons to tell a story. We use video, photo, virtual and augmented reality to engage with your customer.
+					</p>
+					<h3>
+						Create stronger, integrated relationships
+					</h3>
+					<p>
+						The media we create is founded on a concrete understanding of your brand's values and your customers needs. We start every project by exploring and developing these ideas.
+					</p>
+					<h3>
+						A platform for growth
+					</h3>
+					<p>
+						Once you've got your organization on a flexible, data platform for relationship management, your capacity and capabilities grow. Get closer to your customer with tailored engagement, reduce sales effort by automating quoting, and streamline business processes like invoicing.
+					</p>
+					<StyledLink to="/connect">Connect</StyledLink>
+					<StyledLink to="/">Back Home</StyledLink>
 				</TextContainer>
 			</Wrapper>
 		</Container>

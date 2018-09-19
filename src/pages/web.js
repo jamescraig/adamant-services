@@ -57,15 +57,37 @@ export default () => (
 		<Container>
 			<Wrapper>
 				<TextContainer>
-					<Tagline>What does your brand need?</Tagline>
-					<StyledLink to="/web/">Web</StyledLink>
-					<StyledLink to="/media/">Media</StyledLink>
-					<StyledLink to="/systems/">Systems</StyledLink>
-				</TextContainer>
-				<TextContainer>
-					<Tagline>Who we are</Tagline>
-					<StyledLink to="/about/">About</StyledLink>
-					<StyledLink to="/connect/">Connnect</StyledLink>
+					<Tagline>
+						Web
+					</Tagline>
+					<h3>
+						Digital Art & Science
+					</h3>
+					<p>
+						We consider every website a living artwork. We use best of breed tools to create an emotional response that connects with your customer.
+					</p>
+					<p>IMAGERY</p>
+					<p>Last Spike 3d</p>
+					<h3>
+						Faster is better
+					</h3>
+					<p>
+						We get the most out of every platform. That means your site looks and works great whether on your phone or your desktop.
+					</p>
+					<h3>
+						Responsive
+					</h3>
+					<p>
+						We get the most out of every platform. That means your site looks and works great whether on your phone or your desktop.
+					</p>
+					<h3>
+						Customer Driven Design
+					</h3>
+					<p>
+						A deep understanding of your customer drives the design imperatives and functional requirements.
+					</p>
+					<StyledLink to="/connect">Connect</StyledLink>
+					<StyledLink to="/">Back Home</StyledLink>
 				</TextContainer>
 			</Wrapper>
 		</Container>

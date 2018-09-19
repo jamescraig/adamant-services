@@ -57,15 +57,35 @@ export default () => (
 		<Container>
 			<Wrapper>
 				<TextContainer>
-					<Tagline>What does your brand need?</Tagline>
-					<StyledLink to="/web/">Web</StyledLink>
-					<StyledLink to="/media/">Media</StyledLink>
-					<StyledLink to="/systems/">Systems</StyledLink>
-				</TextContainer>
-				<TextContainer>
-					<Tagline>Who we are</Tagline>
-					<StyledLink to="/about/">About</StyledLink>
-					<StyledLink to="/connect/">Connnect</StyledLink>
+					<Tagline>
+						About
+					</Tagline>
+					<h3>
+						Our Approach
+					</h3>
+					<p>
+						Understand your customer
+					</p>
+					<p>
+						Develop systems to support growth
+					</p>
+					<p>
+						Create content that connects
+					</p>
+					<h3>
+						Who we are
+					</h3>
+					<p>
+						Techno-wizards
+					</p>
+					<p>
+						Business analysts
+					</p>
+					<p>
+						Artists and creators
+					</p>
+					<StyledLink to="/connect">Connect</StyledLink>
+					<StyledLink to="/">Back Home</StyledLink>
 				</TextContainer>
 			</Wrapper>
 		</Container>
