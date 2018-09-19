@@ -7,6 +7,7 @@
 /* global tw */
 
 import React from 'react'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
 import logoSrc from '../media/adamant-logo.svg'
@@ -49,39 +50,54 @@ const StyledLink = styled(Link)`
 `
 
 export default () => (
-	<Page>
-		<Navbar>
-			<Logo src={logoSrc} alt="Adamant Labs Logo" />
-			<NavbarTitle>Adamant Labs</NavbarTitle>
-		</Navbar>
-		<Container>
-			<Wrapper>
-				<TextContainer>
-					<Tagline>
-						Systems
-					</Tagline>
-					<h3>
-						Systems make it easy to be good at sales
-					</h3>
-					<p>
-						We find new ways to capture and release photons to tell a story. We use video, photo, virtual and augmented reality to engage with your customer.
-					</p>
-					<h3>
-						Create stronger, integrated relationships
-					</h3>
-					<p>
-						The media we create is founded on a concrete understanding of your brand's values and your customers needs. We start every project by exploring and developing these ideas.
-					</p>
-					<h3>
-						A platform for growth
-					</h3>
-					<p>
-						Once you've got your organization on a flexible, data platform for relationship management, your capacity and capabilities grow. Get closer to your customer with tailored engagement, reduce sales effort by automating quoting, and streamline business processes like invoicing.
-					</p>
-					<StyledLink to="/connect">Connect</StyledLink>
-					<StyledLink to="/">Back Home</StyledLink>
-				</TextContainer>
-			</Wrapper>
-		</Container>
-	</Page>
+	<PageTransition
+    defaultStyle={{
+      transition: 'left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)',
+      left: '100%',
+      position: 'absolute',
+      width: '100%',
+    }}
+    transitionStyles={{
+      entering: { left: '0%' },
+      entered: { left: '0%' },
+      exiting: { left: '100%' },
+    }}
+    transitionTime={500}
+	>
+		<Page>
+			<Navbar>
+				<Logo src={logoSrc} alt="Adamant Labs Logo" />
+				<NavbarTitle>Adamant Labs</NavbarTitle>
+			</Navbar>
+			<Container>
+				<Wrapper>
+					<TextContainer>
+						<Tagline>
+							Systems
+						</Tagline>
+						<h3>
+							Systems make it easy to be good at sales
+						</h3>
+						<p>
+							We find new ways to capture and release photons to tell a story. We use video, photo, virtual and augmented reality to engage with your customer.
+						</p>
+						<h3>
+							Create stronger, integrated relationships
+						</h3>
+						<p>
+							The media we create is founded on a concrete understanding of your brand's values and your customers needs. We start every project by exploring and developing these ideas.
+						</p>
+						<h3>
+							A platform for growth
+						</h3>
+						<p>
+							Once you've got your organization on a flexible, data platform for relationship management, your capacity and capabilities grow. Get closer to your customer with tailored engagement, reduce sales effort by automating quoting, and streamline business processes like invoicing.
+						</p>
+						<StyledLink to="/connect">Connect</StyledLink>
+						<StyledLink to="/">Back Home</StyledLink>
+					</TextContainer>
+				</Wrapper>
+			</Container>
+		</Page>
+	</PageTransition>
 )

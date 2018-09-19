@@ -7,6 +7,7 @@
 /* global tw */
 
 import React from 'react'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
 import logoSrc from '../media/adamant-logo.svg'
@@ -49,45 +50,60 @@ const StyledLink = styled(Link)`
 `
 
 export default () => (
-	<Page>
-		<Navbar>
-			<Logo src={logoSrc} alt="Adamant Labs Logo" />
-			<NavbarTitle>Adamant Labs</NavbarTitle>
-		</Navbar>
-		<Container>
-			<Wrapper>
-				<TextContainer>
-					<Tagline>
-						About
-					</Tagline>
-					<h3>
-						Our Approach
-					</h3>
-					<p>
-						Understand your customer
-					</p>
-					<p>
-						Develop systems to support growth
-					</p>
-					<p>
-						Create content that connects
-					</p>
-					<h3>
-						Who we are
-					</h3>
-					<p>
-						Techno-wizards
-					</p>
-					<p>
-						Business analysts
-					</p>
-					<p>
-						Artists and creators
-					</p>
-					<StyledLink to="/connect">Connect</StyledLink>
-					<StyledLink to="/">Back Home</StyledLink>
-				</TextContainer>
-			</Wrapper>
-		</Container>
-	</Page>
+	<PageTransition
+    defaultStyle={{
+      transition: 'left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)',
+      left: '100%',
+      position: 'absolute',
+      width: '100%',
+    }}
+    transitionStyles={{
+      entering: { left: '0%' },
+      entered: { left: '0%' },
+      exiting: { left: '100%' },
+    }}
+    transitionTime={500}
+	>
+		<Page>
+			<Navbar>
+				<Logo src={logoSrc} alt="Adamant Labs Logo" />
+				<NavbarTitle>Adamant Labs</NavbarTitle>
+			</Navbar>
+			<Container>
+				<Wrapper>
+					<TextContainer>
+						<Tagline>
+							About
+						</Tagline>
+						<h3>
+							Our Approach
+						</h3>
+						<p>
+							Understand your customer
+						</p>
+						<p>
+							Develop systems to support growth
+						</p>
+						<p>
+							Create content that connects
+						</p>
+						<h3>
+							Who we are
+						</h3>
+						<p>
+							Techno-wizards
+						</p>
+						<p>
+							Business analysts
+						</p>
+						<p>
+							Artists and creators
+						</p>
+						<StyledLink to="/connect">Connect</StyledLink>
+						<StyledLink to="/">Back Home</StyledLink>
+					</TextContainer>
+				</Wrapper>
+			</Container>
+		</Page>
+	</PageTransition>
 )
