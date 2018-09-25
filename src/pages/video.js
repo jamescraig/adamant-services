@@ -40,7 +40,7 @@ export default () => (
 		<Section>
 			<VideoBackground style={{zIndex: -1}}>
 				<VideoContainer style={{zIndex: -1}}>
-					<video src={videoSrc} autoPlay loop muted style={{zIndex: -1}}></video>
+					<video src={videoSrc} autoPlay loop muted style={{objectFit: 'cover', zIndex: -1}}></video>
 				</VideoContainer>
 			</VideoBackground>
 			<TextHeadline style={{marginTop: '-100vh'}}>
