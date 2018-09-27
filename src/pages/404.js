@@ -1,10 +1,18 @@
+/* global tw */
+
 import React from 'react'
+import styled from 'react-emotion'
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+const PageWrapper = styled('div')`
+	${tw`p-4`};
+`
+const PageTitle = styled('h1')`
+	${tw`text-center`};
+`
+
+export default () => (
+  <PageWrapper>
+    <PageTitle>NOT FOUND</PageTitle>
+    <p style={{ color: '#fff' }}>You just hit a route that doesn&#39;t exist, yet... the sadness.</p>
+  </PageWrapper>
 )
-
-export default NotFoundPage

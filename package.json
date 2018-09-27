@@ -11,10 +11,13 @@
     "gatsby-link": "next",
     "gatsby-plugin-emotion": "next",
     "gatsby-plugin-react-helmet": "next",
+    "gsap": "^2.0.2",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-emotion": "^9.2.6",
     "react-helmet": "^5.2.0",
+    "scrollmagic": "^2.0.5",
     "tailwindcss": "^0.6.5"
   },
   "keywords": [

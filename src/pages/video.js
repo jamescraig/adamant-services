@@ -7,12 +7,11 @@
 /* global tw */
 
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'react-emotion'
-import logoSrc from '../media/adamant-logo.svg'
 import videoSrc from '../media/video/beeblur2.mp4'
 import videoSrc2 from '../media/video/blur.mp4'
-import '../layouts/index.css'
+import '../styles/index.css'
+import ScrollMagicExample from '../components/animationBlock'
 
 const Section = styled('div')`
 	${tw`relative w-full overflow-visible mb-0`};
@@ -34,7 +33,6 @@ const TextWrapper = styled('div')`
 	${tw`p-4`};
 `
 
-
 export default () => (
 	<div>
 		<Section>
@@ -44,17 +42,19 @@ export default () => (
 				</VideoContainer>
 			</VideoBackground>
 			<TextHeadline style={{marginTop: '-100vh'}}>
+				<ScrollMagicExample>
+					<TextWrapper>
+						<h3>Hello World</h3>
+						<h1>This is the big news headline</h1>
+					</TextWrapper>
+				</ScrollMagicExample>
+			</TextHeadline>
+			<ScrollMagicExample>
 				<TextWrapper>
 					<h3>Hello World</h3>
 					<h1>This is the big news headline</h1>
 				</TextWrapper>
-			</TextHeadline>
-			<TextHeadline>
-				<TextWrapper>
-					<h3>Hello World</h3>
-					<h1>This is the big news headline</h1>
-				</TextWrapper>
-			</TextHeadline>
+			</ScrollMagicExample>
 		</Section>
 		<Section>
 			<VideoBackground style={{zIndex: -1}}>
@@ -63,16 +63,20 @@ export default () => (
 				</VideoContainer>
 			</VideoBackground>
 			<TextHeadline style={{marginTop: '-100vh'}}>
-				<TextWrapper>
-					<h3>Hello World</h3>
-					<h1>This is the big news headline</h1>
-				</TextWrapper>
+				<ScrollMagicExample>
+					<TextWrapper>
+						<h3>Hello World</h3>
+						<h1>This is the big news headline</h1>
+					</TextWrapper>
+				</ScrollMagicExample>
 			</TextHeadline>
 			<TextHeadline>
-				<TextWrapper>
-					<h3>Hello World</h3>
-					<h1>This is the big news headline</h1>
-				</TextWrapper>
+				<ScrollMagicExample>
+					<TextWrapper>
+						<h3>Hello World</h3>
+						<h1>This is the big news headline</h1>
+					</TextWrapper>
+				</ScrollMagicExample>
 			</TextHeadline>
 		</Section>
 	</div>

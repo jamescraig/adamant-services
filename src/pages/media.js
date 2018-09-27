@@ -10,7 +10,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
 import logoSrc from '../media/adamant-logo.svg'
-import '../layouts/index.css'
+import '../styles/index.css'
 
 const Navbar = styled('div')`
 	${tw`flex flex-col bg-grey-light pt-4`};
