@@ -48,6 +48,7 @@ export default () => (
 					<Tagline>Who we are</Tagline>
 					<StyledLink to="/about/">About</StyledLink>
 					<StyledLink to="/connect/">Connnect</StyledLink>
+					<StyledLink to="/video/">Video?</StyledLink>
 				</TextContainer>
 			</Wrapper>
 		</Container>

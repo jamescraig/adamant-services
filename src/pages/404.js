@@ -2,7 +2,6 @@
 
 import React from 'react'
 import styled from 'react-emotion'
-import logoSrc from '../media/adamant-logo.svg'
 
 const PageWrapper = styled('div')`
 	${tw`p-4`};
@@ -12,14 +11,20 @@ const PageTitle = styled('h1')`
 	${tw`text-center`};
 `
 
-const Logo = styled('img')`
-  ${tw`w-32 mx-auto block`};
+const PageContent = styled('p')`
+	${tw`text-center`};
 `
+
+const StyledLink = styled(Link)`
+	${tw`block w-32 bg-grey font-semibold hover:bg-purple hover:text-white shadow-md no-underline leading-normal p-4 mt-4 rounded text-grey-lightest text-lg mx-auto`};
+`
+
 
 export default () => (
   <PageWrapper>
     <PageTitle>NOT FOUND</PageTitle>
-    <Logo src={logoSrc} alt="Adamant Labs Logo"/>
-    <p style={{ color: '#000' }}>You just hit a route that doesn&#39;t exist, yet... the sadness.</p>
+    <PageContent>You just hit a page that doesn&#39;t exist, yet... the sadness.</PageContent>
+		<StyledLink to="/">Home</StyledLink>
+		<StyledLink to="/web/">Web</StyledLink>
   </PageWrapper>
 )
