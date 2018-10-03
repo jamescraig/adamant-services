@@ -10,7 +10,6 @@ import React from 'react'
 import styled from 'react-emotion'
 import videoSrc from '../media/video/beeblur2.mp4'
 import videoSrc2 from '../media/video/blur.mp4'
-import '../styles/index.css'
 import ScrollMagicExample from '../components/animationBlock'
 
 const Section = styled('div')`

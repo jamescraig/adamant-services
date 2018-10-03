@@ -9,20 +9,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
-import logoSrc from '../media/adamant-logo.svg'
-import '../styles/index.css'
-
-const Navbar = styled('div')`
-	${tw`flex flex-col bg-grey-light pt-4`};
-`
-
-const NavbarTitle = styled('h1')`
-	${tw`text-center`};
-`
-
-const Logo = styled('img')`
-	${tw`w-32 mx-auto`};
-`
 
 const Page = styled('div')`
 	${tw`bg-grey-light`};
@@ -50,10 +36,6 @@ const StyledLink = styled(Link)`
 
 export default () => (
 	<Page>
-		<Navbar>
-			<Logo src={logoSrc} alt="Adamant Labs Logo" />
-			<NavbarTitle>Adamant Labs</NavbarTitle>
-		</Navbar>
 		<Container>
 			<Wrapper>
 				<TextContainer>
